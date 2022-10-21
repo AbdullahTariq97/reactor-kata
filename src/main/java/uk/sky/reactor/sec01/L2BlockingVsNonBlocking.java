@@ -13,16 +13,15 @@ public class L2BlockingVsNonBlocking {
 
 
 //      Non Blocking code
-        getDownstreamResponseNonBlocking().subscribeOn(Schedulers.boundedElastic()).subscribe(response -> {
-            for(int count =  0; count < 5;count++){
-                printThreadName("The response is " + response);
-                Util.sleepSeconds(1);
-                count++;
-            }
-        });
-
-        Util.sleepSeconds(5); /** This is to block the main thread long enough for the delegated thread to finish its execution.
-                                  If we don't add it, main thread completes execution of main method and shuts down programme before delegated thread can finish executing */
+//        getDownstreamResponseNonBlocking().subscribeOn(Schedulers.boundedElastic()).subscribe(response -> {
+//                printThreadName("The response is " + response);
+//                Util.sleepSeconds(1);
+//            });
+//
+//        System.out.println("next line");
+//        /** This is to block the main thread long enough for the delegated thread to finish its execution.
+//         If we don't add it, main thread completes execution of main method and shuts down programme before delegated thread can finish executing */
+//        Util.sleepSeconds(5);
     }
 
 

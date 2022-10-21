@@ -15,7 +15,7 @@ public class L1CreatingMono {
          * The Mono may be empty initially and the data may arrive sometime in the future.
          * In this case it will arrive instantly as there is nothing delaying it
          */
-        Mono<String> mono = Mono.just("some data");
+//        Mono<String> mono = Mono.just("some data");
 
         /**
          * No data will be emitted by the Mono as we are not subscribed to this publisher using .subscribe() method
@@ -23,7 +23,7 @@ public class L1CreatingMono {
          * Using the subscribe method we pass a default implementation of a subscriber down to the publisher
          * We can also pass a custom implementation of a subscriber using subscribe(Subscriber subs)
          */
-        Mono.just("some data").subscribe();
+//        Mono.just("some data").subscribe();
 
         /**
          * How do we unwrap the data inside a Mono?

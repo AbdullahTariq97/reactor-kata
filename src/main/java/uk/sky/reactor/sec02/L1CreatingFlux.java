@@ -46,9 +46,14 @@ public class L1CreatingFlux {
         /**
          * Fluxes can be created using a range.
          */
-//
-        Flux<Integer> fluxFromRange = Flux.range(0,12);
-        fluxFromRange.subscribe(data -> System.out.println("The item received by subscriber is : " + data));
+//        Flux<Integer> fluxFromRange = Flux.range(0,12);
+//        fluxFromRange.subscribe(data -> System.out.println("The item received by subscriber is : " + data));
+
+        /**
+         * Flux can be created so that they emmit an item periodically at set intervals
+         */
+//        Flux.interval(Duration.ofSeconds(1)).subscribe(data -> System.out.println("The item received by subscriber is : " + data));
+//        Util.sleepSeconds(5); // makes main thread wait for 4 seconds until processing inside flux is completed
 
     }
 }

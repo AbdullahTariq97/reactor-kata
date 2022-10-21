@@ -16,7 +16,7 @@ public class L3FluxVersusList {
         /**
          * You don't have to wait five seconds, you get the value as its emitted
          */
-        Flux<String> flux = NameGenerator.getNames(5);
-        flux.subscribe(data -> System.out.println("The item received by subscriber is : " + data));
+//        Flux<String> flux = NameGenerator.getNames(5);
+//        flux.subscribe(data -> System.out.println("The item received by subscriber is : " + data));
     }
 }
