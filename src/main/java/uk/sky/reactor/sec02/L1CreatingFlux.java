@@ -45,6 +45,7 @@ public class L1CreatingFlux {
 
         /**
          * Fluxes can be created using a range.
+         *  emit integers between start (included) and start + count (excluded) then complete
          */
 //        Flux<Integer> fluxFromRange = Flux.range(0,12);
 //        fluxFromRange.subscribe(data -> System.out.println("The item received by subscriber is : " + data));
